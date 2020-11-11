@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /*가상 선택자
+            li 안의 a 태그에 마우스가 닿으면 적용되는 css
+            hover , active , focus
+        */
+        .list > li > a:hover{background-color: rgb(136, 221, 255);}
+        .inner > input:focus {background-color: rgb(230, 69, 104);}
+        .title:active{background-color: yellowgreen;}
+    </style>
+
+
+
+</head>
+<body>
+    <div>
+        <ul class = "list"> 
+            <li><a href="#">목록1</a></li>
+            <li><a href="#">목록2</a></li>
+            <li><a href="#">목록3</a></li>
+        </ul>
+    </div>
+
+    <div class = "inner">
+        <input type="text" >
+    </div>
+
+    <p class = "title">active</p>
+    
+</body>
+</html>
