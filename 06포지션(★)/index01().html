@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type = "text/css">
+    *{margin: 0; padding: 0;}
+    .list{width:50%; margin: 0 auto;}
+     p{height: 100px; border: 1px solid;}
+     .content{position: relative;}
+
+    .inner1{background-color: rgb(226, 64, 99);}
+    .inner2{
+        background-color: rgb(189, 107, 192);
+        position: absolute;
+        right: 100px;
+        top: 50 px;
+        width: 70px;
+        height: 70px;
+    }
+    .inner3{background-color: rgb(124, 80, 206);}
+
+
+    </style>
+</head>
+<body>
+    <!-- 포지션의 첫번째 규칙 :  부모요소에 position:relative가 들어간다. 들어가지않으면  body기준으로 좌표가 잡힘 -->
+    <!-- 포지션의 두번째 규칙 : left , right 중에 하나 top , bottom 중에 하나만 선택해서 박스를 이동시킨다 -->
+
+    <div class="list">
+        <div class="content">
+            <p class="inner1"> 포지션 </p>
+            <p class="inner2"> 포지션 </p>
+            <p class="inner3"> 포지션 </p>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
