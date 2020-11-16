@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- jquery- 부트스트랩의 기능을 사용하기위해 반드시 필요 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<style type = "text/css">
+    .my-grid{margin: 0 auto; 
+        /*박스넓이가 지정되어 있을때 가운데 정렬
+        모든 col- 옵션에 float-left or right를 가지고이어서 바로적용이 안됨
+        float none 를 사용해서  col옵션의 float 를 사용하지 않는다고 써야한다*/
+    float: none;}  
+</style>
+
+</head>
+<body>
+
+    <!-- 1줄에 총 12의 값을 갖는다 -->
+    <section>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-6 col-md-9 col-xs  -12 col my-grid">
+
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>               
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
