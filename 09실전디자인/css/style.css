@@ -1,0 +1,179 @@
+/*================헤더영역=================*/
+.my-header {
+    background-color: rgb(36, 33, 33);
+    position: fixed; top :0; left: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+section{
+    margin-top:50px;
+}
+
+.form-control , .btn{border-radius: 0;}
+
+.my-header a {
+    color: darkorange;
+    margin: 0 auto;
+}
+.navbar{margin-bottom: 0;}
+.navbar-brand{padding: 10px 15px;}
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: rgb(255, 208, 151);
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    background-color:rgb(255, 208, 151); ;
+} 
+/*토글메뉴 아이콘 색상*/
+.navbar-toggle .icon-bar+.icon-bar , .navbar-toggle .icon-bar{
+    background-color: darkorange;
+}
+/*토글메뉴 안 로그인메뉴 텍스트 색상*/
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a{
+    color: darkorange;
+}
+.navbar-toggle{
+    border: 1px solid darkorange;
+}
+
+footer .footer-menu{
+    text-align: right;
+    padding: 10px 0;
+}
+
+footer .footer-menu li{
+    display: inline-block;    
+    text-decoration: none;
+    color: royalblue;
+    padding:0px 20px ;
+}
+
+footer{
+    background-color: rgb(36, 33, 33);
+    color: wheat;
+    font-size: 15px;  
+    padding: 20px ;
+    margin-top:70px ;
+}
+/*=================배너영역================*/
+.my-banner{
+    margin-top: 50px;
+}
+
+.footer-copyright address{margin: 0;}
+
+/*배너영역*/
+/* 슬라이더 양쪽의 그라데이션 지우기 */
+.carousel-control.right ,.carousel-control.left{
+    background-image: 
+    linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    
+}
+
+.prod-list , .prod-box{
+    display: block;
+    border: 1px solid rgb(182, 182, 182);
+    box-sizing: border-box;
+    text-align: center;/*블럭 , 텍스트 요소의 가운데정렬*/
+}
+.prod-list,.prod-list>li{
+    padding: 5px;
+}
+
+
+.prod-box{position: relative;}/*이 블록을 기반으로 position : absolute*/
+
+.prod-box .arrow{
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute; /*위치 기반으로 올릴 부모클래스에 relative*/
+    bottom: 15px; left: 15px;
+    background-color: #ccc;
+    color: white;
+    opacity: 1;   
+}
+
+.prod-box .hover{
+    display: block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute; /*위치 기반으로 올릴 부모클래스에 relative*/
+    bottom: 15px; left: 15px;
+    background-color: rgb(50, 96, 245);
+    color: white;   
+    text-align: center;
+    opacity: 0; /*투명도 0~1*/
+}
+
+.prod-box:hover>.arrow{
+    opacity:0;
+}
+.prod-box:hover>.hover{
+    opacity:1;    
+}
+
+.prod-box:hover{
+    border: 1px solid  rgb(50, 96, 245);
+    box-sizing: border-box;
+}
+
+/*=========================================================*/
+
+.prod-content{
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.prod-info span{
+
+    display: block;    
+}
+
+.prod-info{
+    float: left;
+}
+.prod-content .prod-price{   
+    
+    float: right;
+
+}
+.prod-image{
+    text-align: center;
+}
+
+.prod-color ul{
+    overflow: hidden;
+}
+.prod-color ul li{    
+    float: left;
+}
+
+.prod-color{
+    opacity: 0;
+    margin-top: -20px; /*margin을 음수로 주면 해당위치로 올라간다*/
+    transition: opacity 0.5s ease-in-out;
+    /*trasition : 변경할 옵션 , 주기 , 변경속도 , 딜레이초*/
+}
+
+.prod-list-nike:hover > .prod-color{
+    
+    opacity: 1;
+    
+}
+.text-center{
+    overflow: hidden;
+    
+}
+.text-center button{
+    float: right;
+    padding: 4px 12px;
+}
+
+.pagination{margin: 0;}
+
+
+
+

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 참조파일 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 개인디자인 (css파일) -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+
+    </style>
+
+</head>
+
+<body>
+    <!-- 헤더영역 -->
+    <header class="my-header">
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- 화면이 휴대폰사이즈로 줄었을때 나오는 영역 -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30" alt="logo"></a> <!-- 로고 영역 -->
+                </div>
+
+                <!-- 메뉴 작성부분 -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">집</a></li>
+
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Side</a></li>
+                    </ul>
+
+
+                    <!-- 우측 메뉴 -->
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인 <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right" action="/action_page.php">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"> 찾기 </button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 배너영역 -->
+    <!-- bs.js jquery.js가 반드시 필여  -->
+    <!-- 헤더영역과 겹치지않게 헤더의 높이만큼  margin처리 -->
+    <section class="my-banner">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <!--  슬라이드 이미지에 a링크 추가 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#"><img src="img/1.jpg" alt="kimchi"></a>
+                </div>
+
+                <div class="item">
+                    <a href="#"><img src="img/2.jpg" alt="court"></a>
+                </div>
+
+                <div class="item">
+                    <a href="#"><img src="img/3.jpg" alt="Yangnyum"></a>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+
+            <h2>오늘의 추천상품 <small> | MD추천 상품</small></h2>
+            <div class="row"> <!-- border 1px -->
+                <!-- row안에서는 어디에  col-을 붙여도 상관없으나 -->
+                <div>
+                    <ul class="col-xs-12 prod-list"> <!-- border 1px -->
+                        <li class="col-sm-6">
+                            <a href="#" class="prod-box"> <!-- border 1px(인라인이므로 블럭으로 변환) -->
+                                <img src="img/box1.jpg" alt="1">
+                                <span class="arrow"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                                <span class="hover">상세보기<i class="glyphicon glyphicon-chevron-right"></i></span>
+                            </a>
+                        </li>
+
+                        <li class="col-sm-6">
+                            <a href="#" class="prod-box">
+                                <img src="img/box2.jpg" alt="1">
+                                 <span class="arrow"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                                <span class="hover">상세보기<i class="glyphicon glyphicon-chevron-right"></i></span>
+                            </a>
+                        </li>
+
+                        <li class="col-sm-6 col-md-3">
+                            <a href="#" class="prod-box">
+                                <img src="img/box3.jpg" alt="1">
+                                 <span class="arrow"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                                <span class="hover">상세보기<i class="glyphicon glyphicon-chevron-right"></i></span>
+                            </a>
+                        </li>
+
+                        <li class="col-sm-6 col-md-3">
+                            <a href="#" class="prod-box">
+                                <img src="img/box4.jpg" alt="1">
+                                 <span class="arrow"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                                <span class="hover">상세보기<i class="glyphicon glyphicon-chevron-right"></i></span>
+                            </a>
+                        </li>
+
+                        <li class="col-sm-6 col-md-3">
+                            <a href="#" class="prod-box">
+                                <img src="img/box5.jpg" alt="1">
+                                 <span class="arrow"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                                <span class="hover">상세보기<i class="glyphicon glyphicon-chevron-right"></i></span>
+                            </a>
+                        </li>
+
+                        <li class="col-sm-6 col-md-3">
+                            <a href="#" class="prod-box">
+                                <img src="img/box6.jpg" alt="1">
+                                 <span class="arrow"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                                <span class="hover">상세보기<i class="glyphicon glyphicon-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="col-sm-6 ">
+                            <a href="#" class="prod-box">
+                                <img src="img/box7.jpg" alt="1">
+                                 <span class="arrow"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                                <span class="hover">상세보기<i class="glyphicon glyphicon-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="col-sm-3 ">
+                            <a href="#" class="prod-box">
+                                <img src="img/box8.jpg" alt="1">
+                                 <span class="arrow"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                                <span class="hover">상세보기<i class="glyphicon glyphicon-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="col-sm-3 ">
+                            <a href="#" class="prod-box">
+                                <img src="img/box9.jpg" alt="1">
+                                 <span class="arrow"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                                <span class="hover">상세보기<i class="glyphicon glyphicon-chevron-right"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- 풋터 영역 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-copyright">
+                        <a href="#"><img src="img/logo.svg" alt="부3" width="20"></a>
+                        Coding404 | 대표자 : 우광우 | E-MAIL : null<br />
+                        개인정보보호책임자 : 우광우 | All clues reporting <br />
+                        주소 : 서울시 강남구
+
+                        <address>©Bootstrap. ALL RIGHTS RESERVED</address>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <ul class="footer-menu text-right">
+                        <li><a href="#">유용한 정보</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">개인정보 취급방침</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
