@@ -175,5 +175,205 @@ footer{
 .pagination{margin: 0;}
 
 
+/*==================LED마스크=====================*/
+
+.led-info{
+    margin-bottom: 100px;
+}
+
+.led-content{
+    font-size: 25px;   
+    margin-bottom: 10px;    
+}
+
+.led-price{
+    font-size: 30px;
+    padding: 15px 0px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.led-detail{
+    margin: 0;
+    font-size: 15px;
+    color: #646464;
+    font-weight: 100;
+}   
+
+.led-buy{
+    overflow: hidden;
+}
+
+.left{
+    font-size: 20px;
+    display: block;
+    float: left;
+}
+
+.right{
+    font-size: 25px;
+    font-style: inherit;
+    display: block;
+    float: right;
+}
+.btn-left{
+    float: left;
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    
+}
+
+.btn-right{
+    float: right;
+    width: 50%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(15, 96, 189);
+}
+
+.led-btn{
+    border: 1px solid rgb(172, 172, 172);
+    box-sizing: border-box;
+}
+
+.reply-group{
+    overflow: hidden;    
+}
+
+.reply-group input{
+    width: 180px;
+    margin-bottom: 10px;
+}
+.reply-wrap{
+    background-color: #ececec;
+    position: relative;
+    padding:20px;
+    border: 1px solid #cfcfcf;
+    box-sizing: border-box;
+}
+
+.reply-img{
+    position: absolute;
+    top: 20px; left: 20px;
+    
+}
+
+.reply-content{
+    padding-left: 60px;
+}
+
+.reply-left{
+    float: left;
+}
+.reply-right{
+    float : right;    
+}
+
+/*text영역 리사이징 옵션, 애니메이션*/
+
+.reply-content textarea{
+    resize: vertical;
+    height: 100px;
+    transition: height 0.3s ease-in-out;
+    margin-bottom: 10px;
+    /*transition(변경할 속성, 몇초에 걸쳐 일어나는지 , 애니메이션방식, 딜레이시간)*/
+}
+.reply-content textarea:focus{
+    height: 200px;
+}
 
 
+/*댓글 영역*/
+.reply-content p{
+    margin: 0;
+}
+
+.reply-group a{
+   
+    float: right;
+    margin-right: 13px;
+    color: #838383;
+    text-decoration: none;
+}
+.reply-group a:hover{
+    color: #4e4e4e;
+}
+.reply-group p{
+   
+    float: left;
+}
+
+    
+
+/*=========================회원가입=======================*/
+
+.join-form{
+    
+    float: none;/* col 클래스를 사용하는곳에 이 클래스 float none을 써줘야*/
+    margin:0 auto;/*col관련 클래스가 float:left를 갖고있어서 반응형(col-sm-9..)을 쓸경우 중앙정렬이 안됩니다. */
+   
+    
+}
+.join-form form{
+    
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 12px;
+  box-shadow: 0px 10px 16px rgb(163, 163, 163);
+  padding: 40px;
+}
+
+.title-box{
+    width: 250px;
+    margin: 60px auto;
+    text-align: center;
+    padding:20px 40px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+@media(max-width : 767px ){/*최대가로 767px 미만일때적용( col-xs가 동작하는 픽셀과 동일)*/
+.join-form form{
+    padding: 50px 10px;
+}
+}
+
+/*=====================로그인======================*/
+
+
+.login-form{
+    float: none;
+    margin: 0 auto;
+   
+}
+
+.login-form form{
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 12px;
+    box-shadow: 0px 10px 16px rgb(163, 163, 163);
+    padding: 40px;
+     
+}
+
+@media(max-width : 767px){
+    .login-form form{
+        padding: 50px 10px;        
+    }
+    
+}
+
+
+/*===================Tabs - bascic====================*/
+.tabs-basic > li > a:hover{
+    background-color: #dddddd;
+}
+.tabs-basic > li > a{
+    color: #555555;
+    margin: 0;
+    text-align: center;
+}
+.tabs-basic > li{
+    width: 25%;
+}
+
+/*===================Tabs - design====================*/

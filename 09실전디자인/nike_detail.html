@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 참조파일 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 개인디자인 (css파일) -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+
+    </style>
+
+</head>
+
+<body>
+    <!-- 헤더영역 -->
+    <header class="my-header">
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- 화면이 휴대폰사이즈로 줄었을때 나오는 영역 -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30" alt="logo"></a> <!-- 로고 영역 -->
+                </div>
+
+                <!-- 메뉴 작성부분 -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">집</a></li>
+
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Side</a></li>
+                    </ul>
+
+
+                    <!-- 우측 메뉴 -->
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인 <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right" action="/action_page.php">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"> 찾기 </button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 상품정보 영역 -->
+    <section>
+        <div class="container">
+            <h2>상세보기 <small> | 쿠팡예제</small></h2>
+            <div class="row">
+                <li class="col-md-6 col-sm-12">
+                    <img src="img/detail.jpg" alt=" LED마스크">
+                </li>
+
+                <li class="col-md-6 col-sm-12">
+
+                    <div class="led-info">
+                        <p class="led-content">
+                            [게릴라특가]30일 체험가능! 벨라페이스 3컬러 LED마스크 눈마사지
+                            겸용 /4단계 시간조절/피부 홈케어 + 사은품까지!
+                        </p>
+                        <p class="led-price"> 135,000원 </p>
+                        <p class="led-detail"> 무료배송</p>
+                        <p class="led-detail">상품별 배송 | 택배배송 | 당일출고, 12시이전 결제 건까지 해당 (주말, 공휴일 제외)</p>
+
+                    </div>
+
+                    <div class="led-buy">
+                        <p class="left">총 상품금액</p>
+                        <p class="right"> 0원</p>
+                    </div>
+
+                    <div class="led-buy">
+                        <button class="btn-left led-btn">장바구니</button>
+                        <button class="btn-right led-btn">구매하기</button>
+                    </div>
+
+                </li>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 댓글 입력 영역 -->
+    <section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <form action="#" class="reply-wrap">
+                        <div class="reply-img">
+                            <img src="img/profile.png" alt="프로필사진">
+                        </div>
+
+                        <div class="reply-content">
+                            <textarea class="form-control" rows="3"></textarea>
+
+                            <div class="reply-group">
+                                <div class="reply-left">
+                                    <!-- 좌측으로밀기 -->
+                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <button class="reply-right btn btn-info">
+                                    <!-- 우측으로밀기 -->
+                                    등록하기
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <form action="#" class="reply-wrap" >
+                        <div class="reply-img">
+                            <img src="img/profile.png" alt="댓글 프로필 사진">
+                        </div>
+
+                        <div class="reply-content">
+                            <div class="reply-group">
+                                <p>honggildong <small> / 2019/12/10</small></p>
+
+                                <a href="#"><span class="glyphicon glyphicon-pencil"></span>수정</a>
+                                <a href="#"><span class="glyphicon glyphicon-transh"></span>삭제</a>
+                            </div>
+                            <p>여기는 댓글영역</p>                            
+                        </div>
+                    </form>
+                    <form action="#" class="reply-wrap" >
+                        <div class="reply-img">
+                            <img src="img/profile.png" alt="댓글 프로필 사진">
+                        </div>
+
+                        <div class="reply-content">
+                            <div class="reply-group">
+                                <p>honggildong <small> / 2019/12/10</small></p>
+
+                                <a href="#"><span class="glyphicon glyphicon-pencil"></span>수정</a>
+                                <a href="#"><span class="glyphicon glyphicon-transh"></span>삭제</a>
+                            </div>
+                            <p>여기는 댓글영역</p>                            
+                        </div>
+                    </form>
+                    <form action="#" class="reply-wrap" >
+                        <div class="reply-img">
+                            <img src="img/profile.png" alt="댓글 프로필 사진">
+                        </div>
+
+                        <div class="reply-content">
+                            <div class="reply-group">
+                                <p>honggildong <small> / 2019/12/10</small></p>
+
+                                <a href="#"><span class="glyphicon glyphicon-pencil"></span>수정</a>
+                                <a href="#"><span class="glyphicon glyphicon-transh"></span>삭제</a>
+                            </div>
+                            <p>여기는 댓글영역</p>                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-copyright">
+                        <a href="#"><img src="img/logo.svg" alt="부3" width="20"></a>
+                        Coding404 | 대표자 : 우광우 | E-MAIL : null<br />
+                        개인정보보호책임자 : 우광우 | All clues reporting <br />
+                        주소 : 서울시 강남구
+
+                        <address>©Bootstrap. ALL RIGHTS RESERVED</address>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <ul class="footer-menu text-right">
+                        <li><a href="#">유용한 정보</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">개인정보 취급방침</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
