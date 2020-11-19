@@ -18,9 +18,14 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <style type="text/css">
+
+    </style>
+
 </head>
 
 <body>
+
     <header class="my-header">
         <nav class="navbar ">
             <div class="container-fluid">
@@ -71,90 +76,91 @@
         </nav>
     </header>
 
-    <section>
+    <section style="margin-top:100px;">
+
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <aside class="col-md-3 aside-facebook">
+                    <!-- 오른쪽이나 왼쪽에 치우쳐서 나와야할경우 주로 aside를 쓴다 -->
+                    <!-- 좌측메뉴-->
+                    <div class="face-menu1">
 
-                    <!-- li의 href와 tab-content안에 있는 아이디 속성이 연결되어있다 -->
-                    <!-- 각 탭을 눌럿을때 숨겨진 화면을 보여주게 처리하는 형태이다 -->
-
-                    <!--  -->
-
-                    <div class="title-box">
-                        탭스
-                    </div>
-                    <ul class="nav nav-tabs tabs-basic ">
-                        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-                        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-                        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-                        <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-                    </ul>
-
-                    <div class="tab-content">
-                        <div id="home" class="tab-pane fade in active">
-                            <h3>HOME</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div id="menu1" class="tab-pane fade">
-                            <h3>Menu 1</h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</p>
-                        </div>
-                        <div id="menu2" class="tab-pane fade">
-                            <h3>Menu 2</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="menu3" class="tab-pane fade">
-                            <h3>Menu 3</h3>
-                            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                                explicabo.</p>
+                        <div>
+                            <img src="img/profile.png" alt="프로필">
+                            우광우
                         </div>
 
-                    </div>
-                </div>
-            </div>
-    </section>
-
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-10 col-lg-6 tabs-style">    
-                    <div class="title-box ">
-                        탭스
+                        <ul>
+                            <li>뉴스피드</li>
+                            <li>메신저</li>
+                            <li>Watch동영상</li>
+                        </ul>
                     </div>
 
-                    <ul class="nav nav-tabs tabs-basic2">
-                        <li class="active"><a data-toggle="tab" href="#1">1</a></li>
-                        <li><a data-toggle="tab" href="#2">2 </a></li>
-                        <li><a data-toggle="tab" href="#3">3 </a></li>
-                        
-                    </ul>
+                    <div class="face-menu2">
 
-                    <div class="tab-content">
-                        <div id="1" class="tab-pane fade in active">
-                            <h3>1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
+                        <ul>
+                            <li>둘러보기</li>
+                            <li>기부 캠페인</li>
+                            <li>페이지</li>
+                            <li>그룹</li>
+                            <li>이벤트</li>
+                            <li>친구리스트</li>
+                        </ul>
+
+                    </div>
+                </aside>
+
+
+                <div class="col-md-9 section-facebook">
+                    <div>
+                        <!-- 메인 컨텐츠 영역 -->
+                        <div class="title-inner">
+                            <div class="profile"><img src="img/profile.png" alt="프로필" ></div>
+                            <div class="title">
+                                <p>이름</p>
+                                <small>22시간</small>
+                            </div>
                         </div>
-                        <div id="2" class="tab-pane fade">
-                            <h3>2 </h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</p>
+
+                        <div class="content-inner">
+                            <p>태양이 선명하게 나뭇잎을 핥고있었다. 쨍한 녹색빛이 동공으로 흘러들어온다</p>
                         </div>
-                        <div id="3" class="tab-pane fade">
-                            <h3>3 </h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>       
+
+                        <div class="image-inner">
+                            <img src="img/35008938.jpg" alt="나뭇잎">
+                        </div>
+
+                        <div class="like-inner">
+                            <img src="img/like.png" alt="다봉" width="30">
+                            <span>15648</span>
+                        </div>
+
+                        <div class="button-inner">
+                            <a href="#">
+                                <span>
+                                    <i class="glyphicon glyphicon-thumbs-up">좋아요</i>
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>
+                                    <i class="glyphicon glyphicon-comment">댓글달기</i>
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>
+                                    <i class="glyphicon glyphicon-share">공유하기</i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-    </section>
 
+
+            </div>
+        </div>
+
+    </section>
 
     <footer>
         <div class="container">

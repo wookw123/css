@@ -1,0 +1,133 @@
+
+.zara-header{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+
+
+.zara-header>p{
+    font-size: 100px;
+    text-align: center;
+}
+
+.zara-menubar{
+    background-color:black ;
+}
+
+.zara-menu-padding{
+    padding: 0;
+}
+
+.zara-menu{text-align: center;}  
+.zara-menu li{display: inline-block; padding: 15px 40px; text-decoration: none;}
+.zara-menu li:hover{background-color: rgba(226, 201, 180, 0.527);}
+.zara-menu li a{font-size: large; color: white; text-decoration: none;}
+
+.login{
+    display: inline;
+    float: left;
+    padding: 20px;
+}
+
+.login a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.zara-login{
+    position: absolute;
+    top: 20px; right:20px;        
+}
+
+.zara-sidebar{
+    position: absolute;
+    top: 400px; right:20px; 
+    background-color: black;
+}
+
+.zara-sidebar li{
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid #777777;
+}
+.zara-sidebar li p,.zara-sidebar li a{
+    padding: 0; margin: 0;  
+    color: white;  
+}
+
+.zara-sidebar li p small{
+    font-size: 8px;
+    color: white;    
+}
+
+.zara-main{
+    position: relative;
+    margin-top: 195px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.main-categoty >h2{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: rgba(0, 0, 0, 0.356);
+    color: white;
+    text-align: center;    
+    padding:10px ; margin: 0;
+}
+.main-categoty >h3{
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    background-color: rgba(0, 0, 0, 0.356);
+    color: white;
+    text-align: center;    
+    padding:10px ; margin: 0;
+}
+
+
+
+.zara-list{
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.zara-image{
+    text-align: center;
+}
+.zara-content span{
+    display: block;
+    font-size: 15px;
+}
+
+.zaralist-hover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
+    opacity: 0;
+}
+
+.zaralist-hover a{
+    display: block;
+    font-size: 20px;
+    line-height: 50px;      
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    
+    color: white;
+}
+
+@media(max-width :1920px){
+    .zaralist-hover:hover{
+        transition: opacity 0.3s ease-in-out;
+        opacity: 1;
+    }
+}

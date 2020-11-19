@@ -25,7 +25,7 @@ section{
     background-color:rgb(255, 208, 151); ;
 } 
 /*토글메뉴 아이콘 색상*/
-.navbar-toggle .icon-bar+.icon-bar , .navbar-toggle .icon-bar{
+.navbar-toggle .icon-bar.icon-bar , .navbar-toggle .icon-bar{
     background-color: darkorange;
 }
 /*토글메뉴 안 로그인메뉴 텍스트 색상*/
@@ -376,4 +376,109 @@ footer{
     width: 25%;
 }
 
-/*===================Tabs - design====================*/
+/*=============tabs-style=====================*/
+.tabs-basic2 li.active>a,
+.tabs-basic2 li.active>a:hover,
+.tabs-basic2 li.active>a:focus{
+background-color:darkorange;
+color: rgb(39, 39, 39);
+/*클릭된(focus)  상태*/
+}
+
+.tabs-basic2 > li > a:hover{
+    background-color: rgb(255, 200, 132);
+    color: rgb(102, 102, 102);
+    /*마우스 올렸을때 상태*/
+}
+
+.tabs-basic2 > li > a{
+    margin-right: 0;
+    border-radius: 0;
+    background-color: rgb(255, 186, 101);
+    color: rgb(102, 102, 102);
+    /*기본상태*/
+}
+
+.tabs-style{
+    float: none;
+    margin: 0 auto;
+}
+
+
+/*===============내정보관리================*/
+
+.m-cotrol>tr>.m-title{
+    width: 110px;
+    vertical-align: middle;
+    
+}
+
+.m-control .m-md{ /*중간사이즈 화면일때*/
+    width: 200px;
+    display: inline;
+}
+
+.m-control .m-sm{ /*작은사이즈 화면일때*/
+    width: 150px;
+    display: inline;
+}
+
+.m-footer{
+    text-align: center;
+}
+
+/*==================facebook==================*/
+
+.title-inner{position: relative;}
+.title-inner .profile{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.title-inner .title{
+    padding-left: 60px;
+}
+
+.content-inner{
+    padding:10px 0px;
+}
+
+.like-inner , .button-inner{
+    
+    border-top: 1px solid #838383;
+    padding: 5px 0px;
+    box-sizing: border-box;
+}
+
+.like-inner{
+    margin-top: 15px;
+}
+
+.like-inner span{
+    text-decoration: none;
+    vertical-align: middle;    
+    
+}
+
+.button-inner{
+    overflow: hidden;
+}
+
+.button-inner a{
+    float :left;
+    width: 33.3333%;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+}
+
+.section-facebook{
+    border-right: 1px solid #919191;
+    border-left: 1px solid #919191;
+}
+
+@media(max-width:767px){
+    .aside-facebook{
+        display: none;
+    }
+}
